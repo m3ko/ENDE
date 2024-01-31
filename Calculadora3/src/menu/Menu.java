@@ -6,8 +6,8 @@ public class Menu {
     /**
      * El menu de la calculadora, en el que hay metodos que usa el main.
      *
-     * @author Ane Goikuria
-     * @version 23.9.2005
+     * @author Niko Efrem
+     * @version 31.01.2024
      */
     
     public int[] pedirNumeros(){

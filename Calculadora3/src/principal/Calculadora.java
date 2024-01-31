@@ -16,19 +16,20 @@ public class Calculadora {
 		/**
 		 * El main en el que se invocan los metodos.
 		 *
-		 * @author Ane Goikuria
-		 * @version 23.9.2005
+		 * @author Niko Efrem
+		 * @version 31.01.2024
 		 */
-
+		Handler consoleHandler =new ConsoleHandler();
+		Handler fileHandler=null;
+		LOGGER.addHandler(consoleHandler);
+		
+		
 		LOGGER.setLevel(Level.ALL);
 		LOGGER.setUseParentHandlers(false);
 		int resultado = 0;
 		String operacion = "";
 		int[] operandos = new int[2];
 
-		Handler consoleHandler =new ConsoleHandler();
-		Handler fileHandler=null;
-		LOGGER.addHandler(consoleHandler);
 		
 		try {
 			fileHandler=new FileHandler("./logs/ficheroLog.log", true);
